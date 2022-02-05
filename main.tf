@@ -9,11 +9,11 @@ terraform {
    }
 
 provider "aws" {
-        region = "us-east-2" 
+        region = "ap-south-1" 
         profile = "default"
 	}
 
 resource "aws_instance" "Raminfra" {
-	ami = "ami-0231217be14a6f3ba" 
+	ami = "ami-06a0b4e3b7eb7a300 (64-bit x86)" 
 	instance_type = "t2.micro"
 }
